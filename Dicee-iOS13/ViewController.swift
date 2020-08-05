@@ -13,13 +13,20 @@ class ViewController: UIViewController {
     @IBOutlet var diceImageView1: UIImageView!
     @IBOutlet var diceImageView2: UIImageView!
     
+    var leftDiceNumber = 1
+    var rightDiceNumber = 5
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        diceImageView1.image = #imageLiteral(resourceName: "DiceSix")
+        
     }
 
 
+    @IBAction func rollButtonPressed(_ sender: Any) {
+        print("roll pressed")
+        
+    }
 }
 
